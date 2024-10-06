@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+		<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Créer un profil</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	</head>
+	<body>
+    	<div class="w3-container w3-blue w3-row-padding">
+	        <div class="w3-third">
+	            <h2>Créer un profil</h2>
+	        </div>
+	        <div class="w3-third w3-animate-zoom">
+	            <h1 align=center>ENUT</h1>
+	        </div>
+	        <div class="w3-third">
+	            <div class="w3-third w3-margin-top" align=center>
+	            	<img src="../assets/profile.svg" class="w3-image" alt="Photo de profil" style="max-width:30%">
+				</div>
+	          	<div class="w3-third">
+	            	<p>Manon CÉNON</p>
+	            	<p>RH en chef</p>
+	            </div>
+                <div class="w3-third w3-margin-top" align=right>
+					<a href="connexion.html">
+						<img src="../assets/logout.svg" class="w3-image" alt="Se déconnecter" style="max-width:30%">
+					</a>
+                </div>
+	        </div>
+	    </div>
+	    <div class="w3-sidebar w3-pale-blue w3-border-right w3-container w3-center" style="width:15%">
+			<p>
+                <a href="mes_fiches_de_paye_RH_chef.html">
+                    <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-bottom" style="width:100%">Mes fiches de paye</button>
+                </a>
+                <a href="fiche_de_paye_des_employes_RH_chef.html">
+                    <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-bottom" style="width:100%">Fiches de paye des employés</button>
+                </a>
+                <a href="creer_profil.html">
+                    <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge" style="width:100%">Créer un profil</button>
+                </a>
+			</p>
+	  	</div>
+	    <main>
+			<form class="w3-container w3-display-middle w3-card-4 w3-light-grey">
+				<div class="w3-container w3-margin-top w3-border-bottom w3-border-black" align="center">
+					<img src="../assets/profile.svg" alt="Photo de profil" style="max-width:20%" align="center">
+					<h2>Nouveau Profil</h2>
+				</div>
+				<p><label>Nom :</label> 
+				<input type="text" id="nom"></p>
+				<p><label>Prénom :</label> 
+				<input type="text" id="prenom"></p>
+				<p>
+					<label for="role-select">Sélectionnez un rôle :</label>
+					<select name="role" id="role-select">
+						<option value="pdg">PdG</option>
+						<option value="rh">RH</option>
+						<option value="responsable">Responsable de département</option>
+						<option value="employe">Employé</option>
+					</select>
+				</p>
+				<p>
+					<label for="role-select">Sélectionnez un département :</label>
+					<select name="role" id="role-select">
+						<option value="compta">Comptabilité</option>
+						<option value="commercial">Commercial</option>
+						<option value="info">Informatique</option>
+					</select>
+				</p>
+				<p>Adresse mail : <input type="email" id="mail"></p>
+				<p>
+					<h4><U>Autorisations d'accès :</U></h4>
+				</p>
+				<ul>
+					<li>
+						<label>Département comptable : </label>
+						<input type="radio" id="oui-compta" name="acces-compta" value="oui-compta" checked />
+						<label for="oui-compta">Oui</label>
+						<input type="radio" id="non-compta" name="acces-compta" value="non-compta" checked />
+						<label for="non-compta">Non</label>
+					</li>
+					<li>
+						<label>Département informatique : </label>
+						<input type="radio" id="oui-info" name="acces-info" value="oui-info" checked />
+						<label for="oui-info">Oui</label>
+						<input type="radio" id="non-info" name="acces-info" value="non-info" checked />
+						<label for="non-info">Non</label>
+					</li>
+					<li>
+						<label>Département commercial : </label>
+						<input type="radio" id="oui-commercial" name="acces-commercial" value="oui-commercial" checked />
+						<label for="oui-commercial">Oui</label>
+						<input type="radio" id="non-commercial" name="acces-commercial" value="non-commercial" checked />
+						<label for="non-commercial">Non</label>
+					</li>
+				</ul>
+				<p align="center">
+					<button class="w3-margin-top w3-btn w3-white w3-border w3-border-black w3-round-xlarge" style="width:150px">Valider <img src="../assets/validate.svg" class="w3-image" alt="Valider"style="width:15%;max-width:15%"></button>
+				</p>
+			</form>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Index</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+        <style>
+            .scroll-box {
+                max-width: 30%;
+                max-height: 300px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                border: 1px solid #ccc;
+                white-space: nowrap;
+                margin: 20px auto;
+                position: relative;
+                transform: scale(2.5);
+                transform-origin: top center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="w3-container w3-blue w3-row-padding">
+            <div class="w3-third">
+                <h2>Fiche de paye de Décembre 2023</h2>
+            </div>
+            
+            <div class="w3-third w3-animate-zoom">
+                <h1 align="center">ENUT</h1>
+            </div>
+            
+            <div class="w3-third" align="right">
+                <img src="../assets/return.svg" onclick="window.location.href = window.history.back(1);" class="w3-image w3-button" alt="Retour en arrière" style="max-width:15%">
+            </div>
+        </div>
+        <main>
+            <div class="w3-container w3-center">
+                <div class="button-container">
+                    <a href="fiche_de_paye_lecture.html">
+                        <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-top" style="width:250px">
+                            Valider les modifications <img src="../assets/validate.svg" class="w3-image" alt="Valider les modifications" style="max-width:10%">
+                        </button>
+                    </a>
+                    <a href="fiche_de_paye_lecture.html">
+                        <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-top" style="width:250px">
+                            Annuler les modifications <img src="../assets/cancel.svg" class="w3-image" alt="Annuler les modifications" style="max-width:8%">
+                        </button>
+                    </a>
+                </div>
+                <div class="scroll-box">
+                    <img src="../assets/exemple.jpg" class="w3-image" alt="Retour en arrière">
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

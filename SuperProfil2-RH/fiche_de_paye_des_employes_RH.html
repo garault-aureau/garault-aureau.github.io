@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Fiches de paye des employés</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+	</head>
+	<body>
+        <div class="w3-container w3-blue w3-row-padding">
+            <div class="w3-third">
+                <h2>Fiches de paye des employés</h2>
+            </div>
+            <div class="w3-third w3-animate-zoom">
+                <h1 align=center>ENUT</h1>
+            </div>
+            <div class="w3-third">
+                <div class="w3-third w3-margin-top" align=center>
+                    <img src="../assets/profile.svg" class="w3-image" alt="Photo de profil" style="max-width:30%">
+                </div>
+                <div class="w3-third">
+                    <p>Gérard MANGER</p>
+                    <p>RH</p>
+                </div>
+                <div class="w3-third w3-margin-top" align=right>
+                    <a href="connexion.html">
+                        <img src="../assets/logout.svg" class="w3-image" alt="Se déconnecter" style="max-width:30%">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="w3-sidebar w3-pale-blue w3-border-right w3-container w3-center" style="width:15%">
+            <p>
+                <a href="mes_fiches_de_paye_RH.html">
+                    <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-bottom" style="width:100%">Mes fiches de paye</button>
+                </a>
+                <a href="fiche_de_paye_des_employes_RH.html">
+                    <button class="w3-btn w3-white w3-border w3-border-black w3-round-xlarge w3-margin-bottom" style="width:100%">Fiches de paye des employés</button>
+                </a>
+            </p>
+        </div>
+        <main>
+            <div class="w3-container w3-row-padding w3-margin-top" style="margin-left:15%">
+                <div class="w3-half">
+                    <p>Rechercher un employé : <input type="search" id="search-d" style="width:200px">
+                        <button class="w3-margin-top w3-btn w3-white w3-border w3-border-black w3-round-xlarge" style="width:20%;margin-bottom:20px">Valider <img src="../assets/validate.svg" class="w3-image" alt="Valider" style="width:15%;max-width:15%"></button>
+                    </p>
+                    <p>Département :
+                        <select name="departement" id="tri-select">
+                            <option value="comptable">Comptabilité</option>
+                            <option value="informatique">Informatique</option>
+                        </select>
+                    </p>
+                </div>
+                <div class="w3-half"></div>
+                    <p>Choisissez une date :
+                        <select class="w3-margin-top" name="mois" id="tri-select">
+                            <option value="01">Janvier</option>
+                            <option value="02">Février</option>
+                            <option value="03">Mars</option>
+                            <option value="04">Avril</option>
+                            <option value="05">Mai</option>
+                            <option value="06">Juin</option>
+                            <option value="07">Juillet</option>
+                            <option value="08">Août</option>
+                            <option value="09">Septembre</option>
+                            <option value="10">Octobre</option>
+                            <option value="11">Novembre</option>
+                            <option value="12">Décembre</option>
+                        </select>
+                        <select name="annee" id="tri-select">
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                        </select>
+                    </p>
+                    <a href="fiche_de_paye_lecture.html">
+                        <button class="w3-margin-top w3-btn w3-white w3-border w3-border-black w3-round-xlarge" style="width:10%;margin-bottom:20px">Valider <img src="../assets/validate.svg" class="w3-image" alt="Valider" style="width:15%;max-width:15%"></button>
+                    </a>
+                </div>
+            </div>
+        </main>
+	</body>
+</html>
